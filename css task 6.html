@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Task-6</title>
+    <style>
+    .container{
+        display: flex;
+        flex-direction: column;
+        width:500px;
+        margin:0 auto;
+    }
+    .img{
+        width: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    label{
+        font-weight: bold;
+    }
+    input{
+        margin-bottom: 15px;
+        padding: 7px;
+    }
+    button{
+        color: white;
+        background-color: rgb(16, 166, 16);
+        border: none;
+        padding: 10px;
+    }
+    .remember{
+        margin: 10px 10px 10px 0px;
+    }
+    .footer{
+        border-top:1px solid grey;
+        background-color: rgb(186, 184, 184);
+        display: flex;
+        box-sizing: border-box;
+        height: 70px;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer button{
+        background-color: red;
+        width:100px;
+        border-radius: 5px;
+        height: 40px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+            <img src= "images/download.jpeg" alt="loading...">
+        </div>
+        <label for="username">Username</label>
+        <input class= "username" type="text" placeholder="Enter Username">
+        <label for="password">Password</label>
+        <input class = "password" type ="password" placeholder="Enter Password">
+        <button>LOGIN</button>
+        <div class="remember">
+            <input type="checkbox" checked> Remember me
+        </div>
+        <div class="footer">
+            <button>Cancel</button>
+            <a href="#">Forgot password?</a>
+        </div>
+    </div> 
+</body>
+</html>

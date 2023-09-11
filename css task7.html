@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Task-7</title>
+    <style>
+        body{
+            background-color: rgb(150, 8, 86);
+        }
+        .container{
+            background-color: rgb(101, 2, 57) ;
+            display: flex;
+            width: fit-content;
+            padding: 50px;
+            margin: 0 auto;
+
+
+        }
+        td,th{
+            
+            padding: 8px 40px;
+            text-align: left;
+            color: white;
+        }
+        input{
+            height: 20px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="backend.php">
+            <table>
+                <tr>
+                    <th>First Name</th>
+                    <td><input type="text" class="intype" placeholder="Enter your name"></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><input type="email" class="intype" placeholder="Enter your email"></td>
+                </tr>
+                <tr>
+                    <th>Password</th>
+                    <td><input type="password" class="intype"></td>
+                </tr>
+                <tr>
+                    <th>Phone Number</th>
+                    <td><input type="tel" class="intype"></td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>
+                        <input type="radio" class="gender" value="male">Male
+                        <input type="radio" class="gender" value="female">Female
+                        <input type="radio" class="gender" value="female">Other
+                    </td>
+                </tr>
+                <tr>
+                    <th>Zip code:</th>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Language</th>
+                    <td>
+                        <select name="language" >
+                            <option value="India">Select language</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>About</th>
+                    <td><textarea id="comments" name="comments" rows="5" cols="20" placeholder="Write about yourself..."></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button style = "width:100%;height:40px;border:none;font-size:20px; border-radius: 5px;">REGISTER</button>
+                    </td>
+                    
+                </tr>
+
+    
+            </table>
+        </form>
+    </div>
+    
+</body>
+</html>
